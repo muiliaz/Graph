@@ -1,0 +1,52 @@
+#contribution-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 40px auto;
+}
+
+#labels-and-graph {
+    display: flex;
+    align-items: flex-start;
+}
+
+#month-labels {
+    display: flex;
+    width: 62%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+#day-labels {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+
+#contribution-graph {
+    display: grid;
+    grid-template-columns: repeat(51, 1fr);
+    grid-gap: 2px;
+    width: calc(100% - 20px);
+}
+
+.cell {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+}
+.cell:hover {
+    box-shadow: 0 0 5px rgba(33, 4, 138, 0.5);
+    transform: scale(1.1);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.level-0 { background-color: #ebedf0; }
+.level-1 { background-color: #8ac5ec; }
+.level-2 { background-color: #32b7d8; }
+.level-3 { background-color: #2383dd; }
+.level-4 { background-color: #084fac; }
